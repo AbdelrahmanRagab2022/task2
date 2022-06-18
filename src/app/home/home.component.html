@@ -1,0 +1,20 @@
+<div class="product-container">
+    <div class="head">
+        <h1 style="color:rgba(0, 0, 0, 0.763);">Products</h1>
+        <button (click)="syncData()">Sync</button>
+
+    </div>
+    <div class="product" *ngFor="let item of allProduct ; let i = index" [style.display]="(_ProductService.category.value=='all'||item.category==_ProductService.category.value)?'block':'none'">
+
+        <div class="inner">
+            <div style="border: 1px solid rgba(0, 0, 0, .1);margin:0px">
+                <img [src]="item.imageUrl" [alt]="item.name">
+                <h4 style="color:rgba(0, 0, 0, 0.763)">{{item.name}}</h4>
+                <h4 style=color:#78708C;>&dollar;{{item.price}}</h4>
+                <button (click)="syncItem(i)">Sync</button>
+            </div>
+
+        </div>
+
+    </div>
+</div>

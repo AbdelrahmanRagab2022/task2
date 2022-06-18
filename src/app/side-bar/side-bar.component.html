@@ -1,0 +1,6 @@
+<h3>Products</h3>
+<ul>
+    <li (click)="setCategory('all')" [style.color]="_ProductService.category.value=='all'?'#23C5DB':'#78708C'">All</li>
+    <li (click)="setCategory('simple')" [style.color]="_ProductService.category.value=='simple'?'#23C5DB':'#78708C'">Simple Tools</li>
+    <li (click)="setCategory('complex')" [style.color]="_ProductService.category.value=='complex'?'#23C5DB':'#78708C'">Complex Tools</li>
+</ul>

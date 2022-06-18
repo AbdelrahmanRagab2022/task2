@@ -1,0 +1,11 @@
+nav {
+    color: white;
+    margin: 0px;
+    padding: 10px 25px;
+    background-image: linear-gradient(to right, #1565C0, #23C5DB);
+}
+
+nav h2 {
+    margin: 0;
+    font-size: 30px;
+}
